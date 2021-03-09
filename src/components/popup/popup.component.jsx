@@ -16,7 +16,7 @@ export const Popup = ({show, closePopupHandler}) => {
                 <h4>Popup</h4> 
               </div>
             <div className="popup-footer">
-                <button className="btn-cancel">Close</button>
+                <button onClick= {closePopupHandler} className="btn-cancel">Close</button>
             </div>
           </div>
       </div>
