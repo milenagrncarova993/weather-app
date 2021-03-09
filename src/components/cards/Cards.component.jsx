@@ -1,5 +1,7 @@
 import React from 'react';
-import './Cards.component.css'
+import './Cards.component.css';
+import { Popup } from '../popup/popup.component.jsx';
+
 
 const CardItem = ({day,temp,windDirection,windSpeed,type}) =>(
 
@@ -7,6 +9,7 @@ const CardItem = ({day,temp,windDirection,windSpeed,type}) =>(
         <img src="./images/weather-photo.png" alt="Sample photo"></img>
         <h1 className='day'>{day.toUpperCase()}</h1>
         <h5 className='temp'>{temp}°C</h5>
+        <Popup/>
     </div>
 )
 
