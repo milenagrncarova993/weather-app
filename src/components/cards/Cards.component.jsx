@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './Cards.component.css';
-import { Popup } from '../popup/popup.component.jsx'
+import './popup.component.css';
 
 
-function CardItem  ({day,temp,windDirection,windSpeed,type}){
+function CardItem  ({day,temp}){
     const [show, setShow] = useState(false);
     const closePopupHander = () => setShow(false);
 
@@ -17,6 +17,31 @@ function CardItem  ({day,temp,windDirection,windSpeed,type}){
         <Popup show={show} closePopupHandler={closePopupHander}/>
     </div>
 )
+}
+
+function Popup  ({show, closePopupHandler,day,temp,windDirection,windSpeed,type}){
+    return(
+      <div className="popup-wrapper"
+        style={{
+          opacity: show ? '1' : '0'
+        }}
+      >
+          <div ClassName="popup-header">
+          <h1 className='day'>{day}</h1>
+          </div>
+          <div className="popup-content">
+              <div className="popup-body">
+              <h5 className='temp'>{temp}°C</h5>
+              <h5 className='temp'>{windDirection}</h5>
+              <h5 className='temp'>{windSpeed}</h5>
+              <h5 className='temp'>{type}</h5>
+              </div>
+            <div className="popup-footer">
+                <button onClick= {closePopupHandler} className="btn-cancel">Close</button>
+            </div>
+          </div>
+      </div>
+    )
 }
 
 
