@@ -10,49 +10,49 @@ class Days extends React.Component{
         this.state = {
             days: [
                 {
-                    day:'Monday',
+                    day:'Mon',
                     temp:22,
                     windDirection:'north-east',
                     windSpeed:10,
                     type:'sunny'
                 },
                 {
-                    day:'Tuesday',
+                    day:'Tue',
                     temp:14,
                     windDirection:'north-west',
                     windSpeed:14,
                     type:'rainy'
                 },
                 {
-                    day:'Wednesday',
+                    day:'Wed',
                     temp:17,
                     windDirection:'south-east',
                     windSpeed:20,
                     type:'cloudy'
                 },
                 {
-                    day:'Thursday',
+                    day:'Thu',
                     temp:17,
                     windDirection:'south-east',
                     windSpeed:20,
                     type:'cloudy'
                 },
                 {
-                    day:'Friday',
+                    day:'Fri',
                     temp:14,
                     windDirection:'north-west',
                     windSpeed:14,
                     type:'rainy'
                 },
                 {
-                    day:'Saturday',
+                    day:'Sat',
                     temp:22,
                     windDirection:'north-east',
                     windSpeed:10,
                     type:'sunny'
                 },
                 {
-                    day:'Sunday',
+                    day:'Sun',
                     temp:22,
                     windDirection:'north-east',
                     windSpeed:10,
