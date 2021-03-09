@@ -10,7 +10,7 @@ function CardItem  ({day,temp}){
     return (
 
     <div className='content'>
-        <img src="./images/weather-photo.png" alt="Sample photo"></img>
+        <img src={require("../../images/weather-photo.png")} alt="Sample photo"></img>
         <h1 className='day'>{day.toUpperCase()}</h1>
         <h4 className='temp'>{temp}°C</h4>
         <button onClick={() =>setShow(true)} className="btn-openPopup">View More</button>

@@ -1,5 +1,5 @@
 .popup-wrapper{
-    background: rgba(0, 0, 0,0.6);
+    background: white;
     position: fixed;
     bottom: 1;
     right: 50%;
@@ -21,6 +21,14 @@
 
 .popup-content{
     padding: 1.5rem 1rem;
+    background-color: white;
+}
+
+.popup-body{
+    background-color: white;
+}
+.popup-footer {
+    background-color: white;
 }
 
 
