@@ -1,4 +1,5 @@
 import React from 'react';
+import CardItem from '../cards/Cards.component';
 
 
 class Days extends React.Component{
@@ -61,11 +62,12 @@ class Days extends React.Component{
     }
 
     render(){
-        return(
+        return (
             <div className='days-menu'>
                 {
-                    this.state.days.map(({day,temp,windDirection,windSpeed,type}))
-                }
+                    this.state.days.map(({day,temp,windDirection,windSpeed,type}) =>(
+                        <CardItem day={day} temp={temp} windDirection={windDirection} windSpeed={windSpeed} type={type}/>
+                ))}
             </div>
 
         );
