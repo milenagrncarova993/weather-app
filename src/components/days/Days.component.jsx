@@ -1,5 +1,6 @@
 import React from 'react';
 import CardItem from '../cards/Cards.component';
+import './Days.component.css';
 
 
 class Days extends React.Component{
