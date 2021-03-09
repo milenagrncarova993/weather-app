@@ -1,9 +1,13 @@
 import React from 'react';
 import './popup.component.css';
 
-export const Popup = () => {
+export const Popup = ({show, closePopupHandler}) => {
     return(
-      <div className="popup-wrapper">
+      <div className="popup-wrapper"
+        style={{
+          opacity: show ? '1' : '0'
+        }}
+      >
           <div ClassName="popup-header">
               <p>Hello</p>
           </div>
