@@ -10,7 +10,7 @@ function CardItem  ({day,temp}){
     return (
 
     <div className='content'>
-        <img src={require("../../images/weather-photo.png")} alt="Sample photo"></img>
+        <img src={require("../sources/weather.jpg")} alt="Sample photo"></img>
         <h1 className='day'>{day.toUpperCase()}</h1>
         <h4 className='temp'>{temp}°C</h4>
         <button onClick={() =>setShow(true)} className="btn-openPopup">View More</button>
@@ -18,6 +18,7 @@ function CardItem  ({day,temp}){
     </div>
 )
 }
+
 
 function Popup  ({show, closePopupHandler,day,temp,windDirection,windSpeed,type}){
     return(
@@ -31,10 +32,10 @@ function Popup  ({show, closePopupHandler,day,temp,windDirection,windSpeed,type}
           </div>
           <div className="popup-content">
               <div className="popup-body">
-              <h5 className='temp'>{temp}°C</h5>
-              <h5 className='temp'>{windDirection}</h5>
-              <h5 className='temp'>{windSpeed}</h5>
-              <h5 className='temp'>{type}</h5>
+              <h5 className='temp'>Temperature: {temp}°C</h5>
+              <h5 className='temp'>Wind Direction: {windDirection}</h5>
+              <h5 className='temp'>Wind Seed: {windSpeed} m/s</h5>
+              <h5 className='temp'>Type: {type}</h5>
               </div>
             <div className="popup-footer">
                 <button onClick= {closePopupHandler} className="btn-cancel">Close</button>

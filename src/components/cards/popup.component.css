@@ -1,8 +1,8 @@
 .popup-wrapper{
     background: white;
     position: fixed;
-    bottom: 1;
-    right: 50%;
+    bottom: 2;
+    right: 40%;
     border: 3px solid #f1f1f1;
     z-index: 9;
     width: 300px;
@@ -12,7 +12,7 @@
 
 .popup-header {
     background: #2c2c2c;
-    color: #e9e9e9;
+    color: black;
     padding: 1rem;
     display: flex;
     align-items:center;
@@ -20,14 +20,17 @@
 }
 
 .popup-content{
+    color: black;
     padding: 1.5rem 1rem;
     background-color: white;
 }
 
 .popup-body{
+    color: black;
     background-color: white;
 }
 .popup-footer {
+    color: black;
     background-color: white;
 }
 
