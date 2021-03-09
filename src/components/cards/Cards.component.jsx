@@ -9,6 +9,7 @@ const CardItem = ({day,temp,windDirection,windSpeed,type}) =>(
         <img src="./images/weather-photo.png" alt="Sample photo"></img>
         <h1 className='day'>{day.toUpperCase()}</h1>
         <h5 className='temp'>{temp}°C</h5>
+        <button className="btn-openPopup">View More</button>
         <Popup/>
     </div>
 )
