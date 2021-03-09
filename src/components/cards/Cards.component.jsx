@@ -12,7 +12,7 @@ function CardItem  ({day,temp}){
     <div className='content'>
         <img src="./images/weather-photo.png" alt="Sample photo"></img>
         <h1 className='day'>{day.toUpperCase()}</h1>
-        <h5 className='temp'>{temp}°C</h5>
+        <h4 className='temp'>{temp}°C</h4>
         <button onClick={() =>setShow(true)} className="btn-openPopup">View More</button>
         <Popup show={show} closePopupHandler={closePopupHander}/>
     </div>

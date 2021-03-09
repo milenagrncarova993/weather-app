@@ -2,10 +2,36 @@
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     padding: 0 20px 20px;
+    background-color:white;
 }
 
 .content img{
     max-width: 100%;
+    background-color: white;
 }
+
+.day {
+    background-color: white;
+}
+
+.temp {
+    background-color: white; 
+}
+
+.btn-openPopup {
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: linear-gradient(#f1f5f8, #1962bb);
+    transition: background 0.3s ease;
+    border: 1px solid #0F60C4;
+}
+.btn-openPopup:hover {
+    background: linear-gradient(#147EFF, #0F67DA);
+    color: white;
+}
+
+
 
 
