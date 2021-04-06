@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Hero = ({handleLogout}) => {
+function Hero ({handleLogout}) {
+    window.analytics.page('Home Page');
+    
     return (
         <section className="hero">
             <nav>

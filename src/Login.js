@@ -2,7 +2,10 @@ import React from 'react';
 
 function Login(props) {
     const { email, setEmail,password, setPassword, handleLogin, handleSignup, hasAccount, setHasAccount, emailError, passwordError} = props;
-    
+    window.analytics.identify({
+        email,
+        password
+      });
     return(
         <section className="login">
             <div className="loginContainer">
